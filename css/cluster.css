@@ -1,0 +1,456 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-09-08 10:56:15
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-09-09 20:55:00
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: "apple";
+	background: #F1F4F9; 
+}
+
+/* 头部开始 */
+header{
+	height: 58px;
+	width: 100%;
+	background: #4381E6;
+}
+header .wyq_left{
+	height: 38px;
+	width: 177px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 42px;
+}
+header .wyq_imgs{
+	height: 38px;
+	width: 38px;
+	float: left;
+}
+header .wyq_title{
+	width: 130px;
+	height: 18px;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+header .wyq_right{
+	height: 28px;
+	width: 128px;
+	float: right;
+	margin-right: 14px;
+	margin-top: 14px;
+	display: flex;
+	align-items: center;
+}
+header .wyq_useimgs{
+	height: 28px;
+	width: 28px;
+	float: left;
+}
+header .wyq_useword{
+	height: 16px;
+	width: 71px;
+	margin-left: 7px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+header .wyq_jiantou{
+	height: 10px;
+	width: 10px;
+	margin-left: 12px;
+	background: url('../img/back.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* 头部结束 */
+
+
+
+/* 内容开始 */
+main{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;	
+}
+main .wyq_list{
+	width: 180px;
+	box-shadow: 0 2px 1px 2px rgba(218, 218, 218, 0.6);
+	background: #fff;
+}
+main .wyq_list ul{
+	width: 180px;
+}
+main .wyq_list ul li{
+	height: 40px;
+	width: 100%;
+	border-bottom: 1px solid #ececec;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+main ul .wyq_choose{
+	background: #ECF2FC;
+	border-bottom: none;
+	border-right: 2px solid #4381e6;
+}
+main ul .wyq_choose p{
+	font-size: 14px;
+	color: #4381e6;
+	font-weight: bold;
+}
+main ul p{
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+}
+
+main .wyq_content{
+	width: calc(100% - 180px);
+	float: right;
+	margin: 15px;
+	height: 100%;
+	margin-bottom: 61px;
+}
+main .wyq_content .wyq_top{
+	height: 60px;
+	width: 1156px;
+	background: #fff;
+	border-radius: 4px;
+}
+main .wyq_content .wyq_top .wyq_math{
+	width: 80px;
+	height: 100%;
+	margin-left: 29px;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .wyq_content .wyq_top .wyq_math .wyq_left{
+	height: 16px;
+	width: 48px;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.4);
+}
+main .wyq_content .wyq_top .wyq_math .wyq_right{
+	height: 28px;
+	width: 25px;
+	font-size: 40px;
+	color: #4381e6;
+	font-weight: bold;
+	line-height: 28px;
+	text-align: center;
+}
+main .wyq_content .wyq_top .wyq_password{
+	width: 225px;
+	height: 100%;
+	float: left;
+	margin-left: 114px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .wyq_content .wyq_top .wyq_password .wyq_word{
+	height: 21px;
+	width: 62px;
+}
+main .wyq_content .wyq_top .wyq_password .wyq_pass{
+	height: 28px;
+	width: 153px;
+	background: #F9F9F9;
+	font-size: 14px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.4);
+	line-height: 28px;
+	padding-left: 14px;
+	border-radius: 4px;
+}
+main .wyq_content .wyq_top .wyq_submit{
+	height: 29px;
+	width: 82px;
+	background: #4381E6;
+	float: right;
+	margin-top: 15.5px;
+	margin-right: 30px;
+	border-radius: 4px;
+	font: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 29px;
+	cursor: pointer;
+}
+
+main .wyq_content .wyq_among .wyq_box{
+	height: 193px;
+	width: 1156px;
+	margin-top: 11px;
+	border-radius: 4px;
+}
+main .wyq_content .wyq_among ul{
+	height: 100%;
+	width: 1156px;
+}
+main .wyq_content .wyq_among ul li{
+	height: 90px;
+	width: 378px;
+	margin-right: 11px;
+	margin-bottom: 11px;
+	float: left;
+	border-radius: 4px;
+}
+main .wyq_content .wyq_among ul .cluster1{
+	background: url('../img/cluster1.png');
+}
+main .wyq_content .wyq_among ul .cluster2{
+	background: url('../img/cluster2.png');
+}
+main .wyq_content .wyq_among ul .cluster3{
+	background: url('../img/cluster3.png');
+}
+main .wyq_content .wyq_among ul .cluster4{
+	background: url('../img/cluster4.png');
+}
+main .wyq_content .wyq_among ul .cluster5{
+	background: url('../img/cluster5.png');
+}
+main .wyq_content .wyq_among ul li:nth-child(3){
+	margin-right: 0;
+}
+main .wyq_content .wyq_among ul li .wyq_master{
+	height: 26px;
+	width: 77px;
+	margin-left: 150.5px;
+	margin-top: 19px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 26px;
+}
+main .wyq_content .wyq_among ul li .wyq_amongbottom{
+	height: 23px;
+	width: 207px;
+	margin-left: 85.5px;
+	font-size: 16px;
+	text-align: center;
+	margin-right: 15px;
+	line-height: 23px;
+}
+main .wyq_content .wyq_among ul li .wyq_amongbottom span{
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+}
+main .wyq_content .wyq_among .wyq_box ul .cluster1 p{
+	color: #c1daff;
+}
+main .wyq_content .wyq_among .wyq_box ul .cluster2 p{
+	color: #adffee;
+}
+main .wyq_content .wyq_among .wyq_box ul .cluster3 p{
+	color: #ffefb4;
+}
+main .wyq_content .wyq_among .wyq_box ul .cluster4 p{
+	color: #ffb9c2;
+}
+main .wyq_content .wyq_among .wyq_box ul .cluster5 p{
+	color: #ecb8ff;
+}
+
+main .wyq_content .wyq_bottom{
+	height: 239px;
+	width: 768px;
+	background: #fff;
+	margin-top: 11px;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+}
+main .wyq_content .wyq_bottom .wyq_title{
+	height: 17px;
+	width: 67px;
+	margin: 20px 0 0 28px;
+	display: flex;
+	justify-content: space-between;
+}
+main .wyq_content .wyq_bottom .wyq_line{
+	height: 100%;
+	width: 2px;
+}
+main .wyq_content .wyq_bottom .wyq_words{
+	height: 100%;
+	width: 56px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+}
+main .wyq_content .wyq_bottom .wyq_english{
+	height: 36px;
+	width: 231px;
+	margin-top: 125px;
+	margin-left: 28px;
+}
+main .wyq_content .wyq_bottom .wyq_english .wyq_top1{
+	font-size: 14px;
+	height: 18px;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	line-height: 18px;
+}
+main .wyq_content .wyq_bottom .wyq_english .wyq_bottom1{
+	font-size: 14px;
+	height: 18px;
+	width: 100%;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.4);
+}
+main .wyq_content .wyq_bottom .wyq_pics{
+	height: 183px;
+	width: 222px;
+	position: absolute;
+	top: 27px;
+	right: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* 底部开始 */
+footer{
+	height: 50px;
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	font-size: 12px;
+	font-weight: bold;
+	color:rgba(0,0,0,0.4)
+}
+/* 底部结束 */
+
+
+/* 弹窗开始 */
+.wyq_cover{
+	height: 191px;
+	width: 393px;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 4px;
+	box-shadow: 0 0 1px 1000px rgba(0, 0, 0, 0.8);
+	display: none;
+}
+.wyq_cover .top{
+	height: 41px;
+	width: 393px;
+	overflow:hidden;
+	border-bottom: 1px solid #ececec;
+	display: flex;
+	justify-content: space-between;
+}
+.wyq_cover .top .left{
+	height: 16px;
+	width: 59px;
+	margin: 14px 0 9px 19px;
+	font-weight: bold;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+}
+.wyq_cover .top .error{
+	height: 16px;
+	width: 16px;
+	margin-top: 14px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.wyq_cover .bottom{
+	display: flex;
+	justify-content: center;
+}
+.wyq_cover .bottom .bigbox{
+	height: 71px;
+	width: 235px;
+	margin-top: 27px;
+}
+.wyq_cover .bottom .bigbox .first{
+	height: 16px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.wyq_cover .bottom .bigbox .first .circle{
+	height: 16px;
+	width: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.wyq_cover .bottom .bigbox .first .word{
+	font-size: 14px;
+	font-weight: bold;
+	color: rgba(0, 0, 0,0.4);
+}
+.wyq_cover .bottom .bigbox .second{
+	height: 29px;
+	margin-top: 25px;
+}
+.wyq_cover .bottom .bigbox .second .yes{
+	height: 29px;
+	width: 82px;
+	background: #4381E6;
+	float: left;
+	margin-left: 29px;
+	font-weight: bold;
+	font-size: 14px;	
+	text-align: center;
+	line-height: 29px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.wyq_cover .bottom .bigbox .second .yes a{
+	color: #fff;
+}
+
+.wyq_cover .bottom .bigbox .second .no{
+	height: 29px;
+	width: 82px;
+	float: left;
+	margin-left: 15px;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	line-height: 29px;
+	border: 1px solid #e5e5e5;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
