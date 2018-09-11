@@ -2,7 +2,7 @@
 * @Author: Lenovo
 * @Date:   2018-09-08 10:56:15
 * @Last Modified by:   Lenovo
-* @Last Modified time: 2018-09-09 20:55:00
+* @Last Modified time: 2018-09-11 09:56:33
 */
 *{
 	margin: 0;
@@ -115,7 +115,7 @@ main ul p{
 
 main .wyq_content{
 	width: calc(100% - 180px);
-	float: right;
+	/* float: right; */
 	margin: 15px;
 	height: 100%;
 	margin-bottom: 61px;
