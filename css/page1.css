@@ -2,7 +2,7 @@
 * @Author: Lenovo
 * @Date:   2018-09-08 10:56:15
 * @Last Modified by:   ravaille
-* @Last Modified time: 2018-09-09 00:41:30
+* @Last Modified time: 2018-09-11 09:59:15
 */
 *{
 	margin: 0;
@@ -78,24 +78,23 @@ header .wyq_jiantou{
 main{
 	width: 100%;
 	display: flex;
+	justify-content: space-between;	
 }
 main .wyq_list{
 	width: 180px;
 	box-shadow: 0 2px 1px 2px rgba(218, 218, 218, 0.6);
-	float: left;
+	background: #fff;
 }
 main .wyq_list ul{
 	width: 180px;
-	background: #fff;
-	height: 520px;
 }
-main ul li{
+main .wyq_list ul li{
 	height: 40px;
 	width: 100%;
 	border-bottom: 1px solid #ececec;
 	display: flex;
 	justify-content: center;
-	align-items: center;  
+	align-items: center;
 }
 main ul .wyq_choose{
 	background: #ECF2FC;
@@ -112,12 +111,15 @@ main ul p{
 	color: rgba(0, 0, 0, 0.4);
 	font-weight: bold;
 }
+
 main .wyq_content{
 	width: calc(100% - 180px);
-	float: right;
-	/* background: red; */
+	/* float: right; */
 	margin: 15px;
+	height: 100%;
+	margin-bottom: 61px;
 }
+
 /* ------------------wht---------------------------- */
 main .wht_top{
 	width: 100%;
