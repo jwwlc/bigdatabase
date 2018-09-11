@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-09-08 18:34:41
 * @Last Modified by:   Lenovo
-* @Last Modified time: 2018-09-09 15:13:32
+* @Last Modified time: 2018-09-11 18:53:27
 */
 window.onload=function() {
 	
@@ -41,7 +41,8 @@ window.onload=function() {
             correct.style.display="block";
             correct1.style.display="block";
 			setTimeout(function () {
-				alert("登录成功")
+				// alert("登录成功")
+				window.open("cluster.html");
             },200);
 		}
 
