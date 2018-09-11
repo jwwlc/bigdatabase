@@ -1,0 +1,643 @@
+/*
+* @Author: Lenovo
+* @Date:   2018-09-08 10:56:15
+* @Last Modified by:   Lenovo
+* @Last Modified time: 2018-09-08 18:27:16
+*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: "apple";
+	background: #F1F4F9;
+	position: relative;
+}
+/*公共样式开始*/
+/* 头部开始 */
+header{
+	height: 58px;
+	width: 100%;
+	background: #4381E6;
+}
+header .wyq_left{
+	height: 38px;
+	width: 177px;
+	margin-top: 16px;
+	float: left;
+	margin-left: 42px;
+}
+header .wyq_imgs{
+	height: 38px;
+	width: 38px;
+	float: left;
+}
+header .wyq_title{
+	width: 130px;
+	height: 18px;
+	float: right;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+header .wyq_right{
+	height: 28px;
+	width: 128px;
+	float: right;
+	margin-right: 14px;
+	margin-top: 14px;
+	display: flex;
+	align-items: center;
+}
+header .wyq_useimgs{
+	height: 28px;
+	width: 28px;
+	float: left;
+}
+header .wyq_useword{
+	height: 16px;
+	width: 71px;
+	margin-left: 7px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+header .wyq_jiantou{
+	height: 10px;
+	width: 10px;
+	margin-left: 12px;
+	background: url('../img/back.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/* 头部结束 */
+
+
+
+/* 内容开始 */
+main{
+	width: 100%;
+	display: flex;
+}
+main .wyq_list{
+	width: 180px;
+	box-shadow: 0 2px 1px 2px rgba(218, 218, 218, 0.6);
+	float: left;
+}
+main .wyq_list ul{
+	width: 180px;
+	background: #fff;
+	height: 520px;
+}
+main ul li{
+	height: 40px;
+	width: 100%;
+	border-bottom: 1px solid #ececec;
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+}
+main ul .wyq_choose{
+	background: #ECF2FC;
+	border-bottom: none;
+	border-right: 2px solid #4381e6;
+}
+main ul .wyq_choose p{
+	font-size: 14px;
+	color: #4381e6;
+	font-weight: bold;
+}
+main ul p{
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+	font-weight: bold;
+}
+main .wyq_content{
+	width: calc(100% - 180px);
+	float: right;
+	/*background: red;*/
+	margin: 15px;
+}
+
+
+/* 底部开始 */
+footer{
+	height: 50px;
+	width: 100%;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	font-size: 12px;
+	font-weight: bold;
+	color:rgba(0,0,0,0.4)
+}
+/* 底部结束 */
+/*公共样式结束*/
+/*学习资料开始*/
+/*小标题*/
+.jys_box{
+	width: 100%;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.jys_title{
+	width: 100%;
+	padding-top: 19px;
+	padding-left: 30px;
+
+	/*float: left;*/
+}
+.jys_title p{
+	padding-left: 8px;
+	text-align: left;
+	line-height: 12px;
+	font-weight: bold;
+	border-left: 1px solid #4381E6;
+}
+.jys_search{
+	padding-top: 22px;
+	padding-left: 30px;
+	padding-right:30px;
+	padding-bottom: 21px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.jys_left{
+	display: flex;
+}
+.jys_left p{
+	display: block;
+	width: 42px;
+	height: 29px;
+	line-height: 29px;
+	font-size: 14px;
+}
+.jys_left input{
+	border-radius: 4px;
+	border: 1px solid#f4f4f4;
+	margin-right: 8px;
+}
+.jys_left .button{
+	width: 82px;
+	height: 29px;
+	background: #4381e6;
+	border-radius: 4px;
+	color: #FFFFFF;
+	font-size: 14px;
+	text-align: center;
+	line-height: 29px;
+}
+.jys_right{
+	width: 82px;
+	height: 29px;
+	border-radius: 4px;
+	font-size: 14px;
+	color: #FFFFFF;
+	background: #25cb77;
+	line-height: 29px;
+	text-align: center;
+}
+.jys_tab{
+	width: 100%;
+	padding: 0 30px 30px 30px;
+}
+.jys_tab table{
+	border: 1px solid #f7f7f7;
+	border-radius: 4px;
+}
+.jys_tab tr{
+	font-size: 14px;
+	text-align: center;
+	height: 56px;
+
+	border-radius: 4px;
+}
+.jys_tab td{
+	text-align: center;
+	line-height: 56px;
+	font-size: 14px;
+	color: #999999;
+	border-top: 1px solid #f7f7f7;
+	border-left: 1px solid #f7f7f7;
+	padding: 0 20px;
+}
+
+.jys_tab th{
+	border-left: 1px solid #f7f7f7;
+}
+.jys_tab .jys_first{
+	border-left: none;
+	padding: 0 42px;
+}
+.jys_tab .jys_third{
+	padding: 0 42px;
+}
+.jys_download{
+	width: 82px;
+	height: 29px;
+	border-radius: 4px;
+	background: #25cb77;
+	color: #FFFFFF;
+	line-height: 29px;
+	text-align: center;
+}
+.jys_delete{
+	display: inline-block;
+	width: 82px;
+	height: 29px;
+	border-radius: 4px;
+	color: #999999;
+	line-height: 29px;
+	text-align: center;
+}
+.jys_modify{
+	display: inline-block;
+	width: 82px;
+	height: 29px;
+	border-radius: 4px;
+	background: #25cb77;
+	color: #FFFFFF;
+	line-height: 29px;
+	text-align: center;
+}
+.wht_prev{
+	width: 95px;
+	height: 100%;
+	border: 1px solid #f4f4f4;
+	line-height: 29px;
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 274px;
+	float: left;
+}
+.wht_pgbtn{
+	width: 100%;
+	/*height: 29px;*/
+	margin-top: 28px;
+	padding-bottom: 34px;
+	/* background-color: red; */
+}
+.wht_pgbtn .wht_prev{
+	width: 95px;
+	border: 1px solid #f4f4f4;
+	line-height: 29px;
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 274px;
+	float: left;
+}
+.wht_pgbtn .wht_pg{
+	width: 29px;
+	border-radius: 4px;
+	border: 1px solid #f4f4f4;
+	line-height: 29px;
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 9px;
+	float: left;
+}
+.wht_pgbtn .wht_pg1{
+	width: 29px;
+	/* border-bottom: 1px dashed #8d8d8d; */
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 9px;
+	float: left;
+	line-height: 40px;
+}
+.wht_pgbtn .wht_next{
+	width: 95px;
+	border: 1px solid #f4f4f4;
+	line-height: 29px;
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 9px;
+	float: left;
+}
+.wht_pgbtn .wht_last{
+	height: 100%;
+	width: 80px;
+	border: 1px solid #f4f4f4;
+	line-height: 29px;
+	text-align: center;
+	color: #8d8d8d;
+	margin-left: 9px;
+	float: left;
+}
+.wht_pgbtn .c{
+	width: 29px;
+	/* border-bottom: 1px dashed #8d8d8d; */
+	border-radius: 4px;
+	background-color: #4381E6;
+	border: 1px solid #4381E6;
+	float: left;
+	color: #fff;
+}
+/*学习资料完*/
+/*资料添加*/
+.jys_zltj{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.jys_card{
+	width: 393px;
+	height: 430px;
+	background: #FFFFFF	;
+	border-radius: 4px;
+	padding-top: 15px;
+
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.jys_name{
+	width: 100%;
+	height: 46px;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+	line-height: 46px;
+	border-bottom: 1px solid #f4f4f4;
+	position: relative;
+}
+.jys_name span{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width:48px;
+	height: 100%;
+	display: block;
+	float: right;
+	font-size: 16px;
+	line-height: 100%;
+	text-align: center;
+}
+.jys_hea{
+	width: 100%;
+	padding: 0 38px;
+}
+.jys_one{
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+}
+.jys_one1{
+	padding-left:7px ;
+	padding-top: 28px;
+	padding-bottom: 10px;
+	width: 100%;
+	display: flex;
+	/*text-align: center;*/
+}
+.jys_Mingc{
+	display: block;
+	text-align: center;
+	line-height: 29px;
+	width: 72px;
+	height: 29px;
+}
+.jys_one input{
+	width: 248px;
+	height: 29px;
+	border: 1px solid #f4f4f4;
+	border-radius: 4px;
+}
+.jys_two{
+	width: 100%;
+	padding-left: 72px;
+	padding-top: 12px;
+}
+.jys_two p{
+	width: 82px;
+	height: 29px;
+	border-radius: 4px;
+	background: #4381e6;
+	text-align: center;
+	line-height: 29px;
+	color: #FFFFFF;
+}
+.jys_three{
+	padding-top: 15px;
+	display: flex;
+}
+.jys_three  input{
+	width: 248px;
+	height: 62px;
+	border: 1px solid #f4f4f4;
+	border-radius: 4px;
+}
+.jys_four{
+	padding-top: 15px;
+	display: flex;
+}
+.jys_four1{
+	padding-top: 15px;
+	display: flex;
+}
+.jys_four2{
+	padding-top: 15px;
+	display: flex;
+	padding-bottom: 27px;
+}
+ select{
+	width: 248px;
+	height: 29px;
+	border: 1px solid #f4f4f4;
+	border-radius: 4px;
+	/*color: #00a0c1;*/
+}
+ select::-webkit-input-placeholder{
+	 color: #0f0f0f;
+}
+.jys_five{
+	padding-top: 15px;
+	display: flex;
+}
+.jys_five1{
+	padding-top: 15px;
+	display: flex;
+}
+.jys_five2{
+	padding-top: 15px;
+	display: flex;
+	padding-bottom: 27px;
+}
+.jys_six{
+	padding-top: 15px;
+	display: flex;
+	padding-bottom: 27px;
+}
+.jys_six1{
+	padding-top: 15px;
+	display: flex;
+	padding-bottom: 27px;
+}
+.jys_Ti{
+	/*padding-top: 27px;*/
+	width: 100%;
+	height: 29px;
+	background: #f1f1f1;
+	line-height: 29px;
+	text-align: center;
+	border-radius: 4px;
+}
+/*资料添加完*/
+/*资料修改*/
+.jys_zlxg{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+/*资料修改完*/
+/*下载弹出*/
+.jys_zltj_xiaz{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.jys_zltj_xiaz1{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.jys_zltj_xiaz2{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.jys_zltj_xiaz3{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	display: none;
+}
+.jys_card1{
+	width: 393px;
+	height: 337px;
+	/*height: 430px;*/
+	background: #FFFFFF	;
+	border-radius: 4px;
+	padding-top: 15px;
+
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.jys_card2{
+	width: 393px;
+	height: 309px;
+	/*height: 430px;*/
+	background: #FFFFFF	;
+	border-radius: 4px;
+	padding-top: 15px;
+
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.jys_card3{
+	width: 393px;
+	height: 251px;
+	/*height: 430px;*/
+	background: #FFFFFF	;
+	border-radius: 4px;
+	padding-top: 15px;
+
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.jys_xztc{
+	width: 248px;
+	height: 115px;
+	padding-top: 6px;
+	border-radius: 4px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 74px;
+	top: 226px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: none;
+}
+.jys_option{
+	width: 100%;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px;
+	padding-left: 15px;
+}
+.jys_Select{
+	height: 30px;
+	background: #ecf2fc;
+	color: #4381e6;
+}
+.jys_option:hover{
+	height: 30px;
+	background: #ecf2fc;
+	color: #4381e6;
+}
+/*下载弹出完*/
+/*1*/
+.jys_btfirst{
+	padding-right: 14px;
+}
+.jys_duox{
+	display: block;
+	padding-right: 14px;
+}
+.jys_duox input{
+	color: #00a0c1;
+}
