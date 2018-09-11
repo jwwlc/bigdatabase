@@ -10,7 +10,6 @@ html,body{
 	background: #F1F4F9; 
 }
 
-
 /* 头部开始 */
 header{
 	height: 58px;
@@ -225,6 +224,7 @@ main .lmx_button4:hover{
 	background-color: #B2CCF5;
 	border-top: 1px solid #4381E6;
 }
+
 
 /* 底部内容开始 */
 main .wyq_content .lmx_content{
