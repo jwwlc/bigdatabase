@@ -378,13 +378,13 @@
 <script>
     //    表格增删查改
     let table=document.querySelector("tbody");
-    //     let arr=[
-    //     {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
-    //     {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
-    //     {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
-    //     		]
+        let arr=[
+        {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
+        {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
+        {username:"实验一 基本操作实验",name:"熟悉大数据实验一体机并了解如何搭建集群"},
+        		]
 
-    // localStorage.dataInfo=JSON.stringify(arr);
+    localStorage.dataInfo=JSON.stringify(arr);
     let data=JSON.parse(localStorage.dataInfo);
 
     data.forEach((element)=>{
