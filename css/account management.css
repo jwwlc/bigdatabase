@@ -333,6 +333,17 @@ main table .lmx_list-8{
 }
 main table .lmx_list-9{
 	width: 156px;
+	margin: 0 auto;	
+}
+main table .lmx_list-9 .lmx_del{
+	width: 82px;
+	height: 28px;
+	margin-left: 46px;
+	background-color: #F9F9F9;
+	border-radius: 4px;
+	line-height: 28px;
+	cursor: pointer;
+
 }
 main table .lmx_list-bottom{
 	height: 124px;
