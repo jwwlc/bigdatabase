@@ -2,7 +2,7 @@
 * @Author: Lenovo
 * @Date:   2018-09-09 17:31:44
 * @Last Modified by:   Lenovo
-* @Last Modified time: 2018-09-11 18:17:33
+* @Last Modified time: 2018-09-12 19:14:38
 */
 /*
 * @Author: Lenovo
@@ -133,7 +133,7 @@ main .cjc_content h{
 	color: rgba(0, 0, 0, 0.4);
 	display:block;
 	margin-top: 22px;
-	margin-left: 41px;
+	margin-left: 35px;
 	color: #8C8C8C;
 }
 main .cjc_content .haha{
@@ -468,7 +468,7 @@ main .cjc_content .biaoo1{
 	font-size: 14px;
 	color: rgba(0, 0, 0, 0.4);
 	display:block;
-	margin-top: -27px;
+	margin-top: -73px;
 	margin-left: 306px;
 	color: #8C8C8C;
 }
@@ -485,6 +485,28 @@ main .cjc_content .riq1{
 	padding-left: 31px;
 	line-height: 30px;
 }
+main  .cjc_content .list-first input{
+    width: 130px;
+    height: 32px;
+    /*background: #30c2fb;*/
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    margin-left: 128px;
+    border: 1px solid #f3f3f4;
+    margin-top: -24px;
+}
+main  .cjc_content .list-first2 input{
+    width: 130px;
+    height: 32px;
+    /*background: #30c2fb;*/
+    text-align: center;
+    line-height: 32px;
+    float: left;
+    margin-left: 134px;
+    border: 1px solid #f3f3f4;
+    margin-top: -26px;
+}
 main .cjc_content .riq1 img{
 	font-size: 10px;
 	/* float: right; */
@@ -493,7 +515,7 @@ main .cjc_content .riq1 img{
 	margin-left: 5px;
 }
 main .cjc_content input{
-	margin-left: 126px;
+	margin-left: -392px;
 	margin-top: 11px;
 }
 main .cjc_content .ghh{
@@ -511,7 +533,7 @@ main .cjc_content .fty{
 	color: #8C8C8C;
 }
 main .cjc_content .riq2{
-	width: 82px;
+	width: 85px;
 	height: 20px;
 	background: white;
 	border: 1px solid #F8F8F8;
@@ -520,7 +542,7 @@ main .cjc_content .riq2{
 	color:#C3C3C3;
 	font-size: 14px;
 	/* text-align: center; */
-	padding-left: 25px;
+	padding-left: 31px;
 	line-height: 20px;
 
 }
