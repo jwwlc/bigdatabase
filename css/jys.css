@@ -121,7 +121,7 @@ main .wyq_content{
 	/* float: right; */
 	margin: 15px;
 	height: 100%;
-	margin-bottom: 105px;
+	padding-bottom: 105px;
 }
 
 
@@ -271,6 +271,7 @@ footer p{
 	color: #FFFFFF;
 	line-height: 29px;
 	text-align: center;
+	border: 0;
 }
 .wht_prev{
 	width: 95px;
