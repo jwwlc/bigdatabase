@@ -134,14 +134,14 @@
 </html>
 <script>
 	let table=document.querySelector("tbody");
-	// let arr=[
-	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
-	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
-	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
-	// 		]
+	let arr=[
+	{username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+	{username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+	{username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+			]
 
-	// localStorage.dataInfo=JSON.stringify(arr);
-	let data=JSON.parse(localStorage.dataInfo);
+	localStorage.dataInfo3=JSON.stringify(arr);
+	let data=JSON.parse(localStorage.dataInfo3);
 
 	data.forEach((element)=>{
 		createTr(element);
