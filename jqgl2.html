@@ -31,24 +31,36 @@
 	<main>
 		<div class="wyq_list">
 			<ul>
-				<li class="wyq_choose">
+				<a href="cluster.html">
+				<li>
 					<p>集群管理</p>
 				</li>
+				</a>
+				<a href="Study.html">
 				<li>
 					<p>学习资料</p>
 				</li>
+				</a>
+				<a href="management.html">
 				<li>
 					<p>分类管理</p>
 				</li>
+				</a>
+				<a href="account management.html">
 				<li>
 					<p>账户管理</p>
 				</li>
+				</a>
+				<a href="zygl.html">
 				<li>
 					<p>资源管理</p>
 				</li>
-				<li>
+				</a>
+				<a href="jqgl1.html">
+				<li class="wyq_choose">
 					<p>购买记录</p>
 				</li>
+				</a>
 			</ul>
 		</div>
 		<!-- ------------------wht-------------------- -->
@@ -57,13 +69,13 @@
 				<div class="wht_title"><p>订单管理</p></div>
 				<d>
 					<dt><div class="wht_box1">服务类型</div></dt>
-					<dt><div class="wht_box"><span>所有</span><a href=""><i class="iconfont icon-xiangxia"></i></a></div></dt>
+					<dt><div class="wht_box"><select><option value="">所有</option></select></div></dt>
 					<dt><div class="wht_box1">服务使用状态</div></dt>
-					<dt><div class="wht_box"><span>所有</span><a href=""><i class="iconfont icon-xiangxia"></i></a></div></dt>
+					<dt><div class="wht_box"><select><option value="">所有</option></select></div></dt>
 					<dt><div class="wht_box1">发票状态</div></dt>
-					<dt><div class="wht_box"><span>所有</span><a href=""><i class="iconfont icon-xiangxia"></i></a></div></dt>
+					<dt><div class="wht_box"><select><option value="">所有</option></select></div></dt>
 					<dt><div class="wht_box1">日期</div></dt>
-					<dt><div class="wht_box"><a href=""><i class="iconfont icon-xiangxia"></i></a></div></dt>
+					<dt><div class="wht_box"><select><option value="">2018.1.1</option></select></div></dt>
 					<div class="wht_btn">搜索记录</div>
 				</d>
 			
@@ -85,55 +97,11 @@
 						<td width="73">状态</td>
 						<td width="73">操作</td>
 					</tr>
-					<tr>
-						<td>购买</td>
-						<td>2000/02/02</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="	"><div class="wht_btn2">删除</div></a></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="	"><div class="wht_btn2">删除</div></a></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="	"><div class="wht_btn2">删除</div></a></td>
-					</tr>
+					
 				</table>
 				<div class="wht_pgbtn">
-					<div class="wht_prev">上一页</div>
-					<div class="wht_pg">1</div>
+					<a href="jqgl1.html"><div class="wht_prev">上一页</div></a>
+					<a href="jqgl1.html"><div class="wht_pg">1</div></a>
 					<div class="wht_pg c">2</div>
 					<div class="wht_pg1">....</div>
 					<div class="wht_pg">8</div>
@@ -154,3 +122,44 @@
 	<!-- 底部结束 -->
 </body>
 </html>
+<script>
+	let table=document.querySelector("tbody");
+	let arr1=[
+	
+	{fwlx:"购买",gmsj:2018-07-21,ksrq:2018-07-21,jsrq:2018-07-21,day:6,gm:"小",money:699,nr:"教材",tt:"xx公司",nsr:"1234567890",sjr:"张晓明",zt:"已收"},
+	{fwlx:"购买",gmsj:2018-07-21,ksrq:2018-07-21,jsrq:2018-07-21,day:6,gm:"小",money:699,nr:"教材",tt:"xx公司",nsr:"1234567890",sjr:"张晓明",zt:"已收"},
+	{fwlx:"购买",gmsj:2018-07-21,ksrq:2018-07-21,jsrq:2018-07-21,day:6,gm:"小",money:699,nr:"教材",tt:"xx公司",nsr:"1234567890",sjr:"张晓明",zt:"已收"}
+			]
+
+	localStorage.dataInfo1=JSON.stringify(arr1);
+	let data=JSON.parse(localStorage.dataInfo1);
+
+	data.forEach((element)=>{
+		createTr(element);
+	})
+	function createTr(obj){
+		let str=`<tr>
+						<td width="79" type="fwlx">服务类型</td>
+						<td width="90" type="gmsj">购买时间</td>
+						<td width="96" type="ksrq">开始日期</td>
+						<td width="96" type="jsrq">结束日期</td>
+						<td width="73" type="day">天数</td>
+						<td width="73" type="gm">规模</td>
+						<td width="73" type="money">金额</td>
+						<td width="73" type="nr">内容</td>
+						<td width="73" type="tt">抬头</td>
+						<td width="132" type="nsr">纳税人识别号</td>
+						<td width="104" type="sjr">收件人信息</td>
+						<td width="73" type="zt">状态</td>
+						<td width="73" type=""><button>删除</button></td>
+					</tr>`
+		table.innerHTML+=str;
+	}
+	table.ondblclick=function(e){
+		let element=e.target;
+		if(element.nodeName=="BUTTON"){
+			let trs=element.parentNode.parentNode;
+			table.removeChild(trs);
+		}
+	}
+</script>

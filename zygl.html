@@ -31,24 +31,36 @@
 	<main>
 		<div class="wyq_list">
 			<ul>
-				<li class="wyq_choose">
+				<a href="cluster.html">
+				<li>
 					<p>集群管理</p>
 				</li>
-				<li>
+				</a>
+				<a href="Study.html">
+				<li >
 					<p>学习资料</p>
 				</li>
+				</a>
+				<a href="management.html">
 				<li>
 					<p>分类管理</p>
 				</li>
+				</a>
+				<a href="account management.html">
 				<li>
 					<p>账户管理</p>
 				</li>
-				<li>
+				</a>
+				<a href="zygl.html">
+				<li class="wyq_choose">
 					<p>资源管理</p>
 				</li>
+				</a>
+				<a href="jqgl1.html">
 				<li>
 					<p>购买记录</p>
 				</li>
+				</a>
 			</ul>
 		</div>
 		<!-- ------------------wht-------------------- -->
@@ -85,7 +97,7 @@
 		<div class="wht_bottom">
 				<table class="wht_tb" border="1">
 					<tr>
-						<td width="62"><a href=""><div class="wht_btn1"></div></a></td>
+						<td width="62"><input type="checkbox"></td>
 						<td width="108">登录名</td>
 						<td width="96">姓名</td>
 						<td width="96">学号</td>
@@ -95,40 +107,7 @@
 						<td width="158">院校</td>
 						<td width="158">操作</td>
 					</tr>
-					<tr>
-						<td><a href=""><div class="wht_btn1"></div></a></td>
-						<td>2000/02/02</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-
-						<td><a href="	"><div class="wht_btn2">销毁集群</div></a></td>
-					</tr>
-					<tr>
-						<td><a href=""><div class="wht_btn1"></div></a></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="	"><div class="wht_btn2">销毁集群</div></a></td>
-					</tr>
-					<tr>
-						<td><a href=""><div class="wht_btn1"></div></a></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td><a href="	"><div class="wht_btn2">销毁集群</div></a></td>
-					</tr>
+					
 				</table>
 				<div class="wht_pgbtn">
 					<div class="wht_prev">上一页</div>
@@ -153,3 +132,39 @@
 	<!-- 底部结束 -->
 </body>
 </html>
+<script>
+	let table=document.querySelector("tbody");
+	// let arr=[
+	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+	// {username:"张晓明",name:"张晓明",number:12345678,sex:"男",Ctype:"包含全部组件集群",identity:"老师",school:"太原理工大学"},
+	// 		]
+
+	// localStorage.dataInfo=JSON.stringify(arr);
+	let data=JSON.parse(localStorage.dataInfo);
+
+	data.forEach((element)=>{
+		createTr(element);
+	})
+	function createTr(obj){
+		let str=`<tr>
+						<td width="62"><input type="checkbox" /></td>
+						<td width="108" type="username">${obj.username}</td>
+						<td width="96" type="name">${obj.name}</td>
+						<td width="96" type="number">${obj.number}</td>
+						<td width="77" type="sex">${obj.sex}</td>
+						<td width="190" type="Ctype">${obj.Ctype}</td>
+						<td width="158" type="identity">${obj.identity}</td>
+						<td width="158" type="school">${obj.school}</td>
+						<td width="158"><button>销毁集群</button></td>
+					</tr>`
+		table.innerHTML+=str;
+	}
+	table.ondblclick=function(e){
+		let element=e.target;
+		if(element.nodeName=="BUTTON"){
+			let trs=element.parentNode.parentNode;
+			table.removeChild(trs);
+		}
+	}
+</script>

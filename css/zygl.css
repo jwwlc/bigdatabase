@@ -1,8 +1,8 @@
 /*
 * @Author: Lenovo
 * @Date:   2018-09-08 10:56:15
-* @Last Modified by:   ravaille
-* @Last Modified time: 2018-09-11 10:26:11
+* @Last Modified by:   wuhaotian0313
+* @Last Modified time: 2018-09-12 22:06:53
 */
 *{
 	margin: 0;
@@ -144,7 +144,7 @@ main .wht_right{
 	position: relative;
 }
 main .wht_left .wht_title{
-	width:100%;
+	/* width:100%; */
 	height: 12px;
 	margin-top: 19px;
 	margin-left: 30px;
@@ -152,7 +152,7 @@ main .wht_left .wht_title{
 	float: left;
 }
 main .wht_right .wht_title{
-	width:100%;
+	/* width:100%; */
 	height: 12px;
 	margin-top: 19px;
 	margin-left: 30px;
@@ -231,8 +231,7 @@ main .wht_right .wht_hd{
 	height: 15px;
 	float: right;
 	margin-right: 0px;
-	margin-top: 190px;
-	/* background-color: red; */
+	margin-top: 195px;
 }
 main .wht_right .wht_hd .wht_hdw{
 	/* width: 35px; */
@@ -258,7 +257,7 @@ main .wht_right .wht_st{
 	float: right;
 	position: absolute;
 	right: 0;
-	bottom: 5px;
+	bottom: 30px;
 	/* background-color: red; */
 }
 main .wht_right .wht_st .wht_stbox{
@@ -319,7 +318,7 @@ main .wht_bottom{
 main .wht_bottom .wht_tb{
 	border-collapse: collapse;
 	border-color: #333;
-	height: 220px;
+	/* height: 220px; */
 	margin-left:30px;
 	/* margin-top: 33px; */
 }
@@ -356,10 +355,24 @@ main .wht_bottom .wht_btn2{
 	line-height: 29px;
 	text-align: center;
 }
+button{
+	width: 82px;
+	height: 29px;
+	background-color: #4381E6;
+	border-radius: 4px;
+	margin: auto auto;
+	/* font-weight: bold; */
+	font-size: 14px;
+	border: none;
+	color: #fff;
+	line-height: 29px;
+	text-align: center;
+}
 main .wht_bottom .wht_pgbtn{
 	width: 100%;
-	height: 29px;
+	height: 27px;
 	margin-top: 28px;
+	margin-bottom: 22px;
 	/* background-color: red; */
 }
 main .wht_bottom .wht_pgbtn .wht_prev{
